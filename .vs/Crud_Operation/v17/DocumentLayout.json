@@ -1,0 +1,786 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\excel\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\excel\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\controllers\\excelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\controllers\\excelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\excel\\iexcelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\excel\\iexcelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\model\\uploadedfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\model\\uploadedfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\model\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\model\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\model\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\model\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crudoperation.test\\crudoperation.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|solutionrelative:crudoperation.test\\crudoperation.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\controllers\\connectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\controllers\\connectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\crud_operation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\crud_operation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\.vs\\Crud_Operation\\ColorByRegexConfig.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\Crud_Operation\\ColorByRegexConfig.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\migrations\\userdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\migrations\\userdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crudoperation.test\\controller\\usercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|solutionrelative:crudoperation.test\\controller\\usercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\model\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\model\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\services\\token\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\services\\token\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\repository\\interface\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\repository\\interface\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crudoperation.test\\controller\\authcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|solutionrelative:crudoperation.test\\controller\\authcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crudoperation.test\\services\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|solutionrelative:crudoperation.test\\services\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crudoperation.test\\services\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|solutionrelative:crudoperation.test\\services\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crudoperation.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F41A0E-BF31-45D6-9006-C394BCEEDB20}|CrudOperation.Test\\CrudOperation.Test.csproj|solutionrelative:crudoperation.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\model\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\model\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\migrations\\20240820083208_addclassfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\migrations\\20240820083208_addclassfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\migrations\\20240822091332_forid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\migrations\\20240822091332_forid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\migrations\\20240917093300_constains.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\migrations\\20240917093300_constains.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\migrations\\20240919125121_uploadexceldatatodb2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\migrations\\20240919125121_uploadexceldatatodb2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|d:\\meetsuthar\\projects\\dotnet\\crud_operation\\crud_operation\\migrations\\20240919114203_uploadexceldatatodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B3A819-D67B-4703-9384-F9411D235337}|Crud_Operation\\Crud_Operation.csproj|solutionrelative:crud_operation\\migrations\\20240919114203_uploadexceldatatodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 38,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExcelController.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\ExcelController.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Controllers\\ExcelController.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\ExcelController.cs",
+              "RelativeToolTip": "Crud_Operation\\Controllers\\ExcelController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T05:01:11.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcelService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Excel\\ExcelService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\Excel\\ExcelService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Excel\\ExcelService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\Excel\\ExcelService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T04:59:12.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IExcelService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Excel\\IExcelService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\Excel\\IExcelService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Excel\\IExcelService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\Excel\\IExcelService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T04:58:33.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileUploadController.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\FileUploadController.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Controllers\\FileUploadController.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\FileUploadController.cs",
+              "RelativeToolTip": "Crud_Operation\\Controllers\\FileUploadController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAE8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T11:54:15.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Program.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Program.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Program.cs",
+              "RelativeToolTip": "Crud_Operation\\Program.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAewCwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:51:32.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\appsettings.json",
+              "RelativeDocumentMoniker": "Crud_Operation\\appsettings.json",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\appsettings.json",
+              "RelativeToolTip": "Crud_Operation\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-20T07:20:34.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConnectionController.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\ConnectionController.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Controllers\\ConnectionController.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\ConnectionController.cs",
+              "RelativeToolTip": "Crud_Operation\\Controllers\\ConnectionController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAiwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:29:34.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PurchaseOrder.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\PurchaseOrder.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Model\\PurchaseOrder.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\PurchaseOrder.cs",
+              "RelativeToolTip": "Crud_Operation\\Model\\PurchaseOrder.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T11:39:19.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UploadedFile.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\UploadedFile.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Model\\UploadedFile.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\UploadedFile.cs",
+              "RelativeToolTip": "Crud_Operation\\Model\\UploadedFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T11:52:24.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20240919125121_Uploadexceldatatodb2.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240919125121_Uploadexceldatatodb2.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Migrations\\20240919125121_Uploadexceldatatodb2.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240919125121_Uploadexceldatatodb2.cs",
+              "RelativeToolTip": "Crud_Operation\\Migrations\\20240919125121_Uploadexceldatatodb2.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T12:51:22.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\data\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Model\\data\\UserDbContext.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\data\\UserDbContext.cs",
+              "RelativeToolTip": "Crud_Operation\\Model\\data\\UserDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:23:03.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CrudOperation.Test.csproj",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\CrudOperation.Test.csproj",
+              "RelativeDocumentMoniker": "CrudOperation.Test\\CrudOperation.Test.csproj",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\CrudOperation.Test.csproj",
+              "RelativeToolTip": "CrudOperation.Test\\CrudOperation.Test.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-19T11:56:48.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\Interface\\IUserService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Interface\\IUserService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\Interface\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T07:40:11.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20240919114203_Uploadexceldatatodb.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240919114203_Uploadexceldatatodb.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Migrations\\20240919114203_Uploadexceldatatodb.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240919114203_Uploadexceldatatodb.cs",
+              "RelativeToolTip": "Crud_Operation\\Migrations\\20240919114203_Uploadexceldatatodb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T11:42:03.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Repository\\Interface\\IUserRepository.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "Crud_Operation\\Repository\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T07:39:12.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Crud_Operation\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAIwDwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:35:58.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Crud_Operation\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAiwCMAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T13:40:18.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Repository\\UserRepository.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Crud_Operation\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:33:27.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Repository\\AuthRepository.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\AuthRepository.cs",
+              "RelativeToolTip": "Crud_Operation\\Repository\\AuthRepository.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAWwEgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:31:09.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240917093300_constains.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240917093300_constains.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Migrations\\20240917093300_constains.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240917093300_constains.cs",
+              "RelativeToolTip": "Crud_Operation\\Migrations\\20240917093300_constains.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:33:00.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ColorByRegexConfig.txt",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\.vs\\Crud_Operation\\ColorByRegexConfig.txt",
+              "RelativeDocumentMoniker": ".vs\\Crud_Operation\\ColorByRegexConfig.txt",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\.vs\\Crud_Operation\\ColorByRegexConfig.txt",
+              "RelativeToolTip": ".vs\\Crud_Operation\\ColorByRegexConfig.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-18T13:09:34.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Model\\User.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\User.cs",
+              "RelativeToolTip": "Crud_Operation\\Model\\User.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwB0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:22:41.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\UserService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\UserService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\UserService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwBwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:35:38.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Token\\TokenService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\Token\\TokenService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Token\\TokenService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\Token\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:39:07.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthControllerTest.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Controller\\AuthControllerTest.cs",
+              "RelativeDocumentMoniker": "CrudOperation.Test\\Controller\\AuthControllerTest.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Controller\\AuthControllerTest.cs",
+              "RelativeToolTip": "CrudOperation.Test\\Controller\\AuthControllerTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:45:26.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserControllerTest.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Controller\\UserControllerTest.cs",
+              "RelativeDocumentMoniker": "CrudOperation.Test\\Controller\\UserControllerTest.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Controller\\UserControllerTest.cs",
+              "RelativeToolTip": "CrudOperation.Test\\Controller\\UserControllerTest.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwHYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:45:26.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthServiceTest.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Services\\AuthServiceTest.cs",
+              "RelativeDocumentMoniker": "CrudOperation.Test\\Services\\AuthServiceTest.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Services\\AuthServiceTest.cs",
+              "RelativeToolTip": "CrudOperation.Test\\Services\\AuthServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T11:43:14.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "CrudOperation.Test\\UnitTest1.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\UnitTest1.cs",
+              "RelativeToolTip": "CrudOperation.Test\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:44:05.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Services\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "CrudOperation.Test\\Services\\UserServiceTest.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\Services\\UserServiceTest.cs",
+              "RelativeToolTip": "CrudOperation.Test\\Services\\UserServiceTest.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAgwJAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T03:59:49.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Crud_Operation.http",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Crud_Operation.http",
+              "RelativeDocumentMoniker": "Crud_Operation\\Crud_Operation.http",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Crud_Operation.http",
+              "RelativeToolTip": "Crud_Operation\\Crud_Operation.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-05T05:36:27.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\UserDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Migrations\\UserDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\UserDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Crud_Operation\\Migrations\\UserDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T10:02:24.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\AuthService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\AuthService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\AuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:29:49.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240822091332_forid.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240822091332_forid.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Migrations\\20240822091332_forid.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240822091332_forid.cs",
+              "RelativeToolTip": "Crud_Operation\\Migrations\\20240822091332_forid.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:13:33.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Interface\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Services\\Interface\\IAuthService.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Services\\Interface\\IAuthService.cs",
+              "RelativeToolTip": "Crud_Operation\\Services\\Interface\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:45:03.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ResponseData.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\ResponseData.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Model\\ResponseData.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\ResponseData.cs",
+              "RelativeToolTip": "Crud_Operation\\Model\\ResponseData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:34:38.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Model\\LoginViewModel.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Model\\LoginViewModel.cs",
+              "RelativeToolTip": "Crud_Operation\\Model\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:57:25.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\Interface\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Repository\\Interface\\IAuthRepository.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Repository\\Interface\\IAuthRepository.cs",
+              "RelativeToolTip": "Crud_Operation\\Repository\\Interface\\IAuthRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:35:53.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240820083208_AddClassField.cs",
+              "DocumentMoniker": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240820083208_AddClassField.cs",
+              "RelativeDocumentMoniker": "Crud_Operation\\Migrations\\20240820083208_AddClassField.cs",
+              "ToolTip": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Migrations\\20240820083208_AddClassField.cs",
+              "RelativeToolTip": "Crud_Operation\\Migrations\\20240820083208_AddClassField.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:32:08.4Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

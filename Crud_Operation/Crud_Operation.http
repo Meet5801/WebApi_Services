@@ -1,0 +1,17 @@
+### Login
+POST https://localhost:7096/api/Auth/Login
+Content-Type: application/json
+
+{
+  "phoneNumber": "1233211233",
+  "password": "string"
+}
+
+### Refresh Token
+POST https://localhost:7096/api/Auth/RefreshToken?refreshToken=65rKu997wMN4PJuUScTuFdL11lVIk6QCg1qtxUSqeOP2sUPDsH25vTat2dEYvVbtTNi9Q9tKdI4ckio6oZP8Yw==
+Content-Type: application/json
+
+
+### GetAll Users
+GET https://localhost:7096/api/User/GetAll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzIiwibmJmIjoxNzI2NjY1MDEyLCJleHAiOjE3MjY2NjUwNzIsImlhdCI6MTcyNjY2NTAxMiwiaXNzIjoiSldUQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJKV1RTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.DqIx7WJ93BF8S1lK1niHCaBVTjcZbEUKInwBR4ZGjUQ
