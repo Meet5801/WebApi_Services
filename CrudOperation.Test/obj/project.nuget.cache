@@ -1,6 +1,6 @@
 {
   "version": 2,
-
+  "dgSpecHash": "jWkFJUnWTa1R7YYAk+VujEV4TiJ9GWYsz5RZbAQMYVFjsouxBPOwfnfkhThJIxV+OwlkR3430GF+ZX/Zr0F6/A==",
   "success": true,
   "projectFilePath": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\CrudOperation.Test.csproj",
   "expectedPackageFiles": [
@@ -167,5 +167,12 @@
     "C:\\Users\\msuthar\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "C:\\Users\\msuthar\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\CrudOperation.Test\\obj\\project.nuget.cache : Value cannot be null.\r\nParameter name: value"
+    }
+  ]
 }

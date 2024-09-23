@@ -1,6 +1,6 @@
 {
   "version": 2,
-
+  "dgSpecHash": "344XQzPvUl47EtMVfwyOtmGmXmJoN2IeUzw5EErv0y17LspsZLEvBBuEiGQL6YqvH1NtXjJQFQGkB651LaIm2A==",
   "success": true,
   "projectFilePath": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Crud_Operation.csproj",
   "expectedPackageFiles": [
@@ -116,5 +116,12 @@
     "C:\\Users\\msuthar\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\msuthar\\.nuget\\packages\\twilio\\7.3.1\\twilio.7.3.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\obj\\project.nuget.cache : Value cannot be null.\r\nParameter name: value"
+    }
+  ]
 }
