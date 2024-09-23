@@ -6403,5 +6403,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\obj\\project.nuget.cache : Value cannot be null.\r\nParameter name: value"
+    }
+  ]
 }
