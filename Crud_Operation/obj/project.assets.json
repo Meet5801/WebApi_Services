@@ -4905,11 +4905,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MeetSuthar\\Projects\\GitHub\\WebApi_Services\\Crud_Operation\\Crud_Operation.csproj",
+      "projectUniqueName": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Crud_Operation.csproj",
       "projectName": "Crud_Operation",
-      "projectPath": "D:\\MeetSuthar\\Projects\\GitHub\\WebApi_Services\\Crud_Operation\\Crud_Operation.csproj",
+      "projectPath": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\Crud_Operation.csproj",
       "packagesPath": "C:\\Users\\msuthar\\.nuget\\packages\\",
-      "outputPath": "D:\\MeetSuthar\\Projects\\GitHub\\WebApi_Services\\Crud_Operation\\obj\\",
+      "outputPath": "D:\\MeetSuthar\\Projects\\DotNet\\Crud_Operation\\Crud_Operation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
