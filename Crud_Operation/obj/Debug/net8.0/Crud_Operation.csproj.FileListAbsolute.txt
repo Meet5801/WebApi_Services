@@ -280,3 +280,6 @@ D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\bin\Debug\net8.0\Mic
 D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\bin\Debug\net8.0\System.Formats.Asn1.dll
 D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
 D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\obj\Debug\net8.0\Crud_Operation.sourcelink.json
+D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\MeetSuthar\Projects\DotNet\Crud_Operation\Crud_Operation\bin\Debug\net8.0\Twilio.dll

@@ -1,6 +1,7 @@
 ﻿using Crud_Operation.Model;
 using Crud_Operation.Services;
 using Crud_Operation.Services.Interface;
+using Crud_Operation.Services.OtpService;
 using Crud_Operation.Services.Token;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,11 +20,13 @@ namespace Crud_Operation.Controllers
         private ResponseData responseData = new ResponseData();
         private readonly IAuthService _authservice;
         private readonly ITokenService _tokenservice;
+        private readonly IotpService _otpService;
 
-        public AuthController(IConfiguration configuration, IAuthService authService, ITokenService tokenService)
+        public AuthController(IConfiguration configuration, IAuthService authService, ITokenService tokenService, IotpService otpService)
         {
             _authservice = authService;
             _tokenservice = tokenService;
+            _otpService = otpService;
         }
 
         [HttpPost("Register")]
@@ -133,6 +136,71 @@ namespace Crud_Operation.Controllers
             }
 
             return new JsonResult(responseData);
+        }
+        [HttpPost("SendOTP")]
+        public async Task<ActionResult<ResponseData>> SendOTP(string phoneNumber)
+        {
+            responseData = new ResponseData(); // Initialize responseData
+
+            try
+            {
+                var verificationResource = await _otpService.SendOTP(phoneNumber);
+                if (verificationResource != null)
+                {
+                    responseData.code = 200;
+                    responseData.message = "OTP sent successfully";
+                    responseData.success = true;
+                }
+                else
+                {
+                    responseData.code = 400;
+                    responseData.message = "Failed to send OTP";
+                    responseData.success = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                responseData.code = 500;
+                responseData.message = "Error sending OTP: " + ex.Message;
+                responseData.success = false;
+            }
+
+            return responseData.code == 400 || responseData.code == 500
+                ? BadRequest(responseData)
+                : Ok(responseData);
+        }
+
+        [HttpPost("VerifyOTP")]
+        public async Task<ActionResult<ResponseData>> VerifyOTP(string phoneNumber, string otp)
+        {
+            responseData = new ResponseData(); // Initialize responseData
+
+            try
+            {
+                var verificationCheckResource = await _otpService.VerifyOTP(phoneNumber, otp);
+                if (verificationCheckResource != null && verificationCheckResource.Status == "approved")
+                {
+                    responseData.code = 200;
+                    responseData.message = "OTP verified successfully";
+                    responseData.success = true;
+                }
+                else
+                {
+                    responseData.code = 400;
+                    responseData.message = "Invalid OTP";
+                    responseData.success = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                responseData.code = 500;
+                responseData.message = "Error verifying OTP: " + ex.Message;
+                responseData.success = false;
+            }
+
+            return responseData.code == 400 || responseData.code == 500
+                ? BadRequest(responseData)
+                : Ok(responseData);
         }
     }
 }
