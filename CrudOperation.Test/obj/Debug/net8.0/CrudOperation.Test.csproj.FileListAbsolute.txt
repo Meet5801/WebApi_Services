@@ -309,3 +309,5 @@ D:\MeetSuthar\Projects\DotNet\Crud_Operation\CrudOperation.Test\bin\Debug\net8.0
 D:\MeetSuthar\Projects\DotNet\Crud_Operation\CrudOperation.Test\bin\Debug\net8.0\System.Text.Json.dll
 D:\MeetSuthar\Projects\DotNet\Crud_Operation\CrudOperation.Test\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
 D:\MeetSuthar\Projects\DotNet\Crud_Operation\CrudOperation.Test\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\MeetSuthar\Projects\DotNet\Crud_Operation\CrudOperation.Test\obj\Debug\net8.0\CrudOperation.Test.sourcelink.json
+D:\MeetSuthar\Projects\DotNet\Crud_Operation\CrudOperation.Test\bin\Debug\net8.0\Twilio.dll
