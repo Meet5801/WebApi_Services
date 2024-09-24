@@ -109,11 +109,35 @@ namespace TestProjectCrudOperation.Controller
         {
             // Arrange
             var userId = 1;
-            var mockUser = new User { Id = 1, FirstName = "string", LastName = "string", Email = "ee@example.com", Password = "string", PhoneNumber = "1111111111" };
-            ;
+            var mockUser = new User
+            {
+                Id = userId,
+                FirstName = "string",
+                LastName = "string",
+                Email = "ee@example.com",
+                Password = "string",
+                PhoneNumber = "1111111111"
+            };
+
+            _mockTokenService.Setup(service => service.GetUserIdFromToken(It.IsAny<string>()))
+                .Returns(userId.ToString());
 
             _mockUserService.Setup(service => service.GetById(userId))
                 .ReturnsAsync(mockUser);
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    Request =
+            {
+                Headers =
+                {
+                    ["Authorization"] = $"Bearer some_valid_token"
+                }
+            }
+                }
+            };
 
             // Act
             var result = await _controller.GetById();
@@ -138,10 +162,27 @@ namespace TestProjectCrudOperation.Controller
         public async Task GetByIdTest_ReturnsNotFound_WhenUserDoesNotExist()
         {
             // Arrange
-            var userId = 999;
+            var userId = 999; // An ID that does not exist
+            _mockTokenService.Setup(service => service.GetUserIdFromToken(It.IsAny<string>()))
+                .Returns(userId.ToString());
+
             User mockUser = null;
             _mockUserService.Setup(service => service.GetById(userId))
                 .ReturnsAsync(mockUser);
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    Request =
+            {
+                Headers =
+                {
+                    ["Authorization"] = $"Bearer some_valid_token"
+                }
+            }
+                }
+            };
 
             // Act
             var result = await _controller.GetById();
@@ -156,27 +197,45 @@ namespace TestProjectCrudOperation.Controller
             Assert.Null(responseData.data);
         }
 
-        //exception
+        // Exception case
         [Fact]
         public async Task GetByIdTest_ReturnsServerError_WhenExceptionThrown()
         {
             // Arrange
             var userId = 1;
+            _mockTokenService.Setup(service => service.GetUserIdFromToken(It.IsAny<string>()))
+                .Returns(userId.ToString());
+
             _mockUserService.Setup(service => service.GetById(userId))
                 .ThrowsAsync(new System.Exception("Service exception"));
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    Request =
+            {
+                Headers =
+                {
+                    ["Authorization"] = $"Bearer some_valid_token"
+                }
+            }
+                }
+            };
 
             // Act
             var result = await _controller.GetById();
 
             // Assert
-            var okResult = Assert.IsType<ObjectResult>(result.Result);
-            var responseData = Assert.IsType<ResponseData>(okResult.Value);
+            var objectResult = Assert.IsType<ObjectResult>(result.Result);
+            var responseData = Assert.IsType<ResponseData>(objectResult.Value);
 
             Assert.False(responseData.success);
             Assert.Equal("Service exception", responseData.message);
             Assert.Equal(500, responseData.code);
         }
         #endregion
+
 
         #region Delete
         [Fact]

@@ -7,6 +7,7 @@ using Crud_Operation.Model;
 using Crud_Operation.Services.Interface;
 using Crud_Operation.Services.Token;
 using Crud_Operation.Migrations;
+using Crud_Operation.Services.OtpService;
 
 namespace MyProject.Tests
 {
@@ -15,12 +16,14 @@ namespace MyProject.Tests
         private readonly AuthController _controller;
         private readonly Mock<IAuthService> _mockAuthService;
         private readonly Mock<ITokenService> _mockTokenService;
+        private readonly Mock<IotpService> _mockOtpService;
 
         public AuthControllerTests()
         {
             _mockAuthService = new Mock<IAuthService>();
             _mockTokenService = new Mock<ITokenService>();
-            _controller = new AuthController(null, _mockAuthService.Object, _mockTokenService.Object);
+            _mockOtpService = new Mock<IotpService>();
+            _controller = new AuthController(null, _mockAuthService.Object, _mockTokenService.Object ,_mockOtpService.Object);
         }
         #region Register
 
