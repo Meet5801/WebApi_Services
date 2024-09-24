@@ -11,6 +11,7 @@ namespace Crud_Operation.Services.OtpService
         private readonly string accountSid;
         private readonly string authToken;
         private readonly string verificationCode;
+        private readonly string twiliophonenumber;
 
         public otpService(IConfiguration configuration)
         {
@@ -18,6 +19,7 @@ namespace Crud_Operation.Services.OtpService
             accountSid = _configuration["Twilio:AccountSid"];
             authToken = _configuration["Twilio:AuthToken"];
             verificationCode = _configuration["Twilio:VerificationCode"];
+            twiliophonenumber = _configuration["Twilio:TwilioPhonenumber"];
         }
              
         public async Task<VerificationResource> SendOTP(string phoneNumber)

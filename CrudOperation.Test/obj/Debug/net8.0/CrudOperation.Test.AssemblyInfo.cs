@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudOperation.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cc494405c955deeab9abbf95a289fe0fa80259b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7421ea4f07631a2923dc41dfaae030ae0db37da0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudOperation.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudOperation.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

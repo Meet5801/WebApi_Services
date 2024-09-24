@@ -8,6 +8,7 @@ namespace Crud_Operation.Services.Interface
         Task<LoginReponseView> Login(LoginViewModel model);
         Task<User> RefreshToken (string token);
         Task UpdateRefreshToken(int userId, string refreshToken);
-
+        Task<bool> IsPhoneNumberExists(string phoneNumber);
+        Task<User> GetUserByPhoneNumber(string phoneNumber); 
     }
 }
