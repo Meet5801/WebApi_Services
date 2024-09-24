@@ -141,6 +141,14 @@ namespace Crud_Operation.Controllers
         public async Task<ActionResult<ResponseData>> SendOTP(string phoneNumber)
         {
             responseData = new ResponseData(); // Initialize responseData
+            var isphonenumberexist = await _authservice.IsPhoneNumberExists(phoneNumber);
+            if (!isphonenumberexist)
+            {
+                responseData.code = 404; 
+                responseData.message = "Phone number does not exist.";
+                responseData.success = false;
+                return NotFound(responseData);
+            }
 
             try
             {
@@ -173,16 +181,38 @@ namespace Crud_Operation.Controllers
         [HttpPost("VerifyOTP")]
         public async Task<ActionResult<ResponseData>> VerifyOTP(string phoneNumber, string otp)
         {
-            responseData = new ResponseData(); // Initialize responseData
+            var responseData = new ResponseData(); // Initialize responseData
 
             try
             {
                 var verificationCheckResource = await _otpService.VerifyOTP(phoneNumber, otp);
                 if (verificationCheckResource != null && verificationCheckResource.Status == "approved")
                 {
-                    responseData.code = 200;
-                    responseData.message = "OTP verified successfully";
-                    responseData.success = true;
+                    var user = await _authservice.GetUserByPhoneNumber(phoneNumber);
+                    if (user != null)
+                    {
+                        // Generate tokens
+                        var token = _tokenservice.GenerateAuthToken(new LoginReponseView { Id = user.Id });
+                        var refreshToken = _tokenservice.GenerateRefreshToken();
+
+                        // Update user with the new refresh token
+                        await _authservice.UpdateRefreshToken(user.Id, refreshToken);
+
+                        responseData.code = 200;
+                        responseData.message = "OTP verified successfully";
+                        responseData.success = true;
+                        responseData.data = new TokenResponse
+                        {
+                            Token = token,
+                            RefreshToken = refreshToken
+                        };
+                    }
+                    else
+                    {
+                        responseData.code = 404;
+                        responseData.message = "User not found";
+                        responseData.success = false;
+                    }
                 }
                 else
                 {
@@ -202,5 +232,6 @@ namespace Crud_Operation.Controllers
                 ? BadRequest(responseData)
                 : Ok(responseData);
         }
+
     }
 }

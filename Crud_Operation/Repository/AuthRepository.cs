@@ -57,7 +57,7 @@ namespace Crud_Operation.Repository
             return entity;
         }
 
-        private async Task<bool> IsPhoneNumberExists(string phoneNumber)
+        public async Task<bool> IsPhoneNumberExists(string phoneNumber)
         {
             return await _context.Users.AnyAsync(u => u.PhoneNumber == phoneNumber);
         }
@@ -81,6 +81,10 @@ namespace Crud_Operation.Repository
                 _context.Users.Update(user);
                 await _context.SaveChangesAsync();
             }
+        }
+        public async Task<User> GetUserByPhoneNumber(string phoneNumber)
+        {
+            return await _context.Users.SingleOrDefaultAsync(u => u.PhoneNumber == phoneNumber);
         }
     }
 }

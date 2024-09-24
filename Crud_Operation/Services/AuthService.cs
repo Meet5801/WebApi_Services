@@ -12,6 +12,16 @@ public class AuthService : IAuthService
         _authRepository = authRepository;
     }
 
+    public async Task<User> GetUserByPhoneNumber(string phoneNumber)
+    {
+        return await _authRepository.GetUserByPhoneNumber(phoneNumber);
+    }
+
+    public async Task<bool> IsPhoneNumberExists(string phoneNumber)
+    {
+        return await _authRepository.IsPhoneNumberExists(phoneNumber);
+    }
+
     public async Task<LoginReponseView> Login(LoginViewModel model)
     {
         var user = await _authRepository.Login(model);
