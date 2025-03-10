@@ -31,3 +31,8 @@
 /.vs/Crud_Operation/FileContentIndex
 /Crud_Operation/obj/Debug/net8.0
 /.vs
+/CrudOperation.Test/bin/Debug/net8.0/CoverletSourceRootsMapping_CrudOperation.Test
+/Crud_Operation/Crud_Operation.csproj
+/Crud_Operation/obj
+/CrudOperation.Test/obj
+/Crud_Operation/bin/Debug/net8.0

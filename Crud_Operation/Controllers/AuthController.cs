@@ -6,6 +6,7 @@ using Crud_Operation.Services.Token;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -32,7 +33,8 @@ namespace Crud_Operation.Controllers
         [HttpPost("Register")]
         public async Task<ActionResult<ResponseData>> Register(User model)
         {
-            var responseData = new ResponseData(); // Initialize responseData
+            var responseData = new ResponseData();
+            Log.Information("Register request received for user: {@User}", model);
 
             try
             {
@@ -46,27 +48,27 @@ namespace Crud_Operation.Controllers
                 }
                 else
                 {
-                    responseData.code = 400; // Add code for failure
+                    responseData.code = 400;
                     responseData.message = "Problem while registering user!!";
                     responseData.success = false;
                 }
             }
             catch (Exception ex)
             {
-                responseData.code = 500; // Add code for exception
+                Log.Error(ex, "Error occurred while registering user");
+                responseData.code = 500;
                 responseData.message = "Invalid data entered: " + ex.Message;
                 responseData.success = false;
             }
-
-            return responseData.code == 400 || responseData.code == 500
-                ? BadRequest(responseData)
-                : Ok(responseData);
+            return responseData.code == 400 || responseData.code == 500 ? BadRequest(responseData) : Ok(responseData);
         }
-
 
         [HttpPost("Login")]
         public async Task<ActionResult<ResponseData>> Login(LoginViewModel model)
         {
+            Log.Information("Login attempt for user: {PhoneNumber}", model.PhoneNumber);
+            var responseData = new ResponseData();
+
             try
             {
                 var user = await _authservice.Login(model);
@@ -87,21 +89,22 @@ namespace Crud_Operation.Controllers
                     responseData.message = "The provided mobile number does not match any user in our records!";
                     responseData.code = 404;
                 }
-
-                return new JsonResult(responseData);
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "Error occurred while logging in user");
                 responseData.message = "Invalid data entered: " + ex.Message;
-                return new JsonResult(responseData);
+                responseData.code = 500;
             }
+            return new JsonResult(responseData);
         }
-
 
         [HttpPost("RefreshToken")]
         public async Task<ActionResult<ResponseData>> RefreshToken(string refreshToken)
         {
+            Log.Information("Refresh token request received for token: {RefreshToken}", refreshToken);
             var responseData = new ResponseData();
+
             try
             {
                 var user = await _authservice.RefreshToken(refreshToken);
@@ -115,11 +118,7 @@ namespace Crud_Operation.Controllers
                     responseData.success = true;
                     responseData.message = "Token refreshed successfully";
                     responseData.code = 200;
-                    responseData.data = new TokenResponse
-                    {
-                        Token = newToken,
-                        RefreshToken = newRefreshToken
-                    };
+                    responseData.data = new TokenResponse { Token = newToken, RefreshToken = newRefreshToken };
                 }
                 else
                 {
@@ -130,13 +129,14 @@ namespace Crud_Operation.Controllers
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "Error occurred while refreshing token");
                 responseData.success = false;
                 responseData.message = "Error refreshing token: " + ex.Message;
-                responseData.code = 500; // Internal server error
+                responseData.code = 500;
             }
-
             return new JsonResult(responseData);
         }
+
         [HttpPost("SendOTP")]
         public async Task<ActionResult<ResponseData>> SendOTP(string phoneNumber)
         {
