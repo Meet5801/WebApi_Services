@@ -18,44 +18,43 @@ namespace Crud_Operation.Repository
             _context = context;
         }
 
-            public async Task<LoginReponseView> Login(LoginViewModel model)
-            {
-                var user = await _context.Users.Where(u => u.PhoneNumber == model.PhoneNumber && u.Password == model.Password)
-                    .Select(u => new LoginReponseView
-                    {
-                        Id = u.Id,
-                        Firstname = u.FirstName,
-                        Lastname = u.LastName,
-                        Email = u.Email,
-                        PhoneNumber = u.PhoneNumber
-                    })
-                    .SingleOrDefaultAsync();
+        public async Task<LoginReponseView> Login(LoginViewModel model)
+        {
+            var user = await _context.Users.Where(u => u.PhoneNumber == model.PhoneNumber && u.Password == model.Password)
+                .Select(u => new LoginReponseView
+                {
+                    Id = u.Id,
+                    Firstname = u.FirstName,
+                    Lastname = u.LastName,
+                    Email = u.Email,
+                    PhoneNumber = u.PhoneNumber
+                })
+                .SingleOrDefaultAsync();
 
-                return user;
-            }
+            return user;
+        }
 
         public async Task<User> Register(User entity)
         {
             if (await IsPhoneNumberExists(entity.PhoneNumber) || await IsEmailExists(entity.Email))
-            {
                 throw new InvalidOperationException("A user with this phone number or email already exists.");
-            }
 
-            var parameters = new[]
-            {
-        new SqlParameter("@FirstName", entity.FirstName),
-        new SqlParameter("@LastName", entity.LastName),
-        new SqlParameter("@Email", entity.Email),
-        new SqlParameter("@PhoneNumber", entity.PhoneNumber),
-        new SqlParameter("@Password", entity.Password) // Ensure to hash the password before storing
-    };
+            var userIdParam = new SqlParameter("@UserId", System.Data.SqlDbType.Int) { Direction = System.Data.ParameterDirection.Output };
 
-            var userId = await _context.Database.ExecuteSqlRawAsync("EXEC AddUser @FirstName, @LastName, @Email, @PhoneNumber, @Password", parameters);
+            await _context.Database.ExecuteSqlRawAsync("EXEC AddUser @FirstName, @LastName, @Email, @PhoneNumber, @Password, @UserId OUTPUT",
+                new SqlParameter("@FirstName", entity.FirstName),
+                new SqlParameter("@LastName", entity.LastName),
+                new SqlParameter("@Email", entity.Email),
+                new SqlParameter("@PhoneNumber", entity.PhoneNumber),
+                new SqlParameter("@Password", entity.Password),
+                userIdParam
+            );
 
-            entity.Id = userId;
-
+            entity.Id = (int)userIdParam.Value;
             return entity;
         }
+
+
 
         public async Task<bool> IsPhoneNumberExists(string phoneNumber)
         {

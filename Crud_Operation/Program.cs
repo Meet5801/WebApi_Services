@@ -9,19 +9,26 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Crud_Operation.Services.Token;
-using Crud_Operation.Model.data;
-using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
-using Microsoft.Extensions.Configuration;
 using OfficeOpenXml;
 using Crud_Operation.Services.Excel;
 using Crud_Operation.Services.OtpService;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-// Add services to the container.
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration) 
+    .WriteTo.Console() 
+    .WriteTo.Seq("http://localhost:5341") 
+    .Enrich.FromLogContext()
+    .CreateLogger();
 
+// Step 2: Attach Serilog to the builder
+builder.Host.UseSerilog();
+
+// Add services to the container.
 builder.Services.AddControllers();
 
 // CORS policy configuration
@@ -29,7 +36,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins", policy =>
     {
-        policy.WithOrigins("http://localhost:4200") // Add your allowed origins here
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -46,26 +53,28 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IExcelService, ExcelService>();
 builder.Services.AddScoped<IotpService, otpService>();
 
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-{
-    options.RequireHttpsMetadata = false;
-    options.SaveToken = true;
-    options.TokenValidationParameters = new TokenValidationParameters
+// Configure JWT Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidAudience = builder.Configuration["ApplicationSettings:Audience"],
+            ValidIssuer = builder.Configuration["ApplicationSettings:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["ApplicationSettings:TokenSecret"])
+            ),
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 
-        ValidAudience = builder.Configuration["ApplicationSettings:Audience"],
-        ValidIssuer = builder.Configuration["ApplicationSettings:Issuer"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["ApplicationSettings:TokenSecret"])),
-        ClockSkew = TimeSpan.Zero
-    };
-});
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Swagger Configuration
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -92,13 +101,15 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// Database Context
 var provider = builder.Services.BuildServiceProvider();
 var config = provider.GetRequiredService<IConfiguration>();
 builder.Services.AddDbContext<UserDbContext>(i => i.UseSqlServer(config.GetConnectionString("Dbcs")));
 
+// Kestrel Configurations
 builder.Services.Configure<KestrelServerOptions>(options =>
 {
-    options.Limits.MaxRequestBodySize = 1 * 1024 * 1024 * 1024; // Set to 1 GB
+    options.Limits.MaxRequestBodySize = 1 * 1024 * 1024 * 1024; // 1 GB
 });
 
 var app = builder.Build();
@@ -110,12 +121,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Step 3: Enable Serilog Request Logging
+app.UseSerilogRequestLogging();
+
 app.UseHttpsRedirection();
 
 // Use CORS before Authentication and Authorization
 app.UseCors("AllowSpecificOrigins");
 
-app.UseAuthentication(); // Ensure authentication middleware is used
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
